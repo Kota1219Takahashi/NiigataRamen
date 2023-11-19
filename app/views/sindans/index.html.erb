@@ -1,0 +1,329 @@
+<header id="commonHeader">
+<section id="flowsHead" class="wf-mplus1p">あなたにあった新潟市のラーメン屋が1分でわかる</section>
+<section id="flows" class="wf-mplus1p">新潟市ラーメン診断</section>
+</header>
+
+<div id="wrapper">
+   <div class="sense">
+        <article id="pageBody">
+
+            <div class="point_box">
+            <div class="box">
+            <div class="txt">
+            <p>下記の質問に答えてみてください。今のあなたにぴったりのラーメン屋がわかります!</p>
+            </div>
+            </div>
+            </div>
+
+
+            <ul class="qalist wf-mplus1p">
+
+            <li id="1" class="question">
+                <a name="#1"></a>
+                <div class="qbox"><span  class="q">Q.</span>お腹はすいている？</div>
+                <div class="qabox">
+                    <a href="#2" onclick="show(2)" class="qabtn"><div class="btnBox btnBox_y">とてもすいてる！</div></a>
+                    <a href="#4" onclick="show(5)" class="qabtn"><div class="btnBox btnBox_n">普通！</div></a>
+                </div>
+            </li>
+            <li id="2" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>ニンニクは好み？</div>
+                <div class="qabox">
+                    <a href="#3" onclick="show(3)" class="qabtn"><div class="btnBox btnBox_y">大好き！</div></a>
+                    <a href="#4" onclick="show(4)" class="qabtn"><div class="btnBox btnBox_n">普通</div></a>                    
+                </div>
+            </li>
+            <li id="3" class="question" style="display:none;">
+                <a name="#"></a>
+                <div class="qbox"><span  class="q">Q.</span>誰と行く？</div>
+                <div class="qabox">
+                    <a href="#104" onclick="show(104)" class="qabtn"><div class="btnBox btnBox_y">ひとりで！</div></a>
+                    <a href="#105" onclick="show(105)" class="qabtn"><div class="btnBox btnBox_n">誰かと！</div></a>
+                </div>
+            </li>
+            <li id="4" class="question" style="display:none;">
+                    <a name="#"></a>
+                    <div class="qbox"><span  class="q">Q.</span>気分は？</div>
+                    <div class="qabox">
+                        <a href="#101" onclick="show(101)" class="qabtn"><div class="btnBox btnBox_y">味噌！</div></a>
+                        <a href="#102" onclick="show(102)" class="qabtn"><div class="btnBox btnBox_n">豚骨！</div></a>
+                        <a href="#103" onclick="show(103)" class="qabtn"><div class="btnBox btnBox_n">その他</div></a>
+                    </div>
+            </li>
+            <li id="5" class="question" style="display:none;">
+                    <a name="#"></a>
+                    <div class="qbox"><span  class="q">Q.</span>求めるのは？</div>
+                    <div class="qabox">
+                        <a href="#6" onclick="show(6)" class="qabtn"><div class="btnBox btnBox_y">安さ</div></a>
+                        <a href="#8" onclick="show(8)" class="qabtn"><div class="btnBox btnBox_n">上品さ</div></a>
+                    </div>
+            </li>
+            <li id="6" class="question" style="display:none;">
+                    <a name="#"></a>
+                    <div class="qbox"><span  class="q">Q.</span>気分は？</div>
+                    <div class="qabox">
+                        <a href="#7" onclick="show(7)" class="qabtn"><div class="btnBox btnBox_y">辛いもの</div></a>
+                        <a href="#108" onclick="show(108)" class="qabtn"><div class="btnBox btnBox_n">味噌！</div></a>
+                        <a href="#109" onclick="show(109)" class="qabtn"><div class="btnBox btnBox_n">まぜそば！</div></a>
+                        <a href="#110" onclick="show(110)" class="qabtn"><div class="btnBox btnBox_n">つけ麺！</div></a>
+                        <a href="#111" onclick="show(111)" class="qabtn"><div class="btnBox btnBox_n">醤油！</div></a>
+                    </div>
+            </li>
+            <li id="7" class="question" style="display:none;">
+                    <a name="#"></a>
+                    <div class="qbox"><span  class="q">Q.</span>担担麺は好き？</div>
+                    <div class="qabox">
+                        <a href="#106" onclick="show(106)" class="qabtn"><div class="btnBox btnBox_y">好き！</div></a>
+                        <a href="#107" onclick="show(107)" class="qabtn"><div class="btnBox btnBox_n">普通！</div></a>
+                    </div>
+            </li>
+            <li id="8" class="question" style="display:none;">
+                    <a name="#"></a>
+                    <div class="qbox"><span  class="q">Q.</span>気分は？</div>
+                    <div class="qabox">
+                        <a href="#112" onclick="show(104)" class="qabtn"><div class="btnBox btnBox_y">味噌！</div></a>
+                        <a href="#113" onclick="show(105)" class="qabtn"><div class="btnBox btnBox_n">醤油！</div></a>
+                        <a href="#114" onclick="show(115)" class="qabtn"><div class="btnBox btnBox_n">塩！</div></a>
+                    </div>                 
+            </ul>
+
+            <div class="answerList">
+
+                <div id="101" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるラーメンは<span class="fs-18"><span class="bg-y">『〇〇〇〇』</span></span>「まごころ亭」です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明会文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="102" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="103" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="104" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるラーメンは<span class="fs-18"><span class="bg-y"></span></span>「ラーメン次郎新潟店」です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>言わずと知れたボリューム満点のチェーン店、「ラーメン二郎」。ぜひお腹を空かして言ってみては？</p>
+<p></p>
+<p></p>
+<p></p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="105" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧めるラーメンは<span class="fs-18"><span class="bg-y"></span></span>「夢を語れ新潟」です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>新潟大学近くに店を構え、営業中は学生さんを中心にすごい行列をつくっています！</p>
+                    </div>
+                    </div>
+                </div>
+                <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+            </div>
+            </div>
+        </div>
+        <div id="106" style="display:none;" class="answer point_box">
+            <div class="box">
+                <div class="title">
+                <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                </div>
+            <div class="txt">
+                <div class="img">
+                <%= image_tag '' %></div>
+                <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+                <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+            </div>
+            </div>
+            </div>
+        <div id="107" style="display:none;" class="answer point_box">
+            <div class="box">
+                <div class="title">
+                <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                </div>
+            <div class="txt">
+                <div class="img">
+                <%= image_tag '' %></div>
+                <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+                <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+            </div>
+            </div>
+        </div>
+        <div id="108" style="display:none;" class="answer point_box">
+            <div class="box">
+                <div class="title">
+                <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                </div>
+            <div class="txt">
+                <div class="img">
+                <%= image_tag '' %></div>
+                <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="109" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="110" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="111" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="112" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="113" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明文「タイトル」</p>
+<p>詳細を記載</p>
+                        <p><a href="#" class="square_btn">もっと詳しくみる</a></p>
+                    </div>
+                    </div>
+                </div>
+                <div id="114" style="display:none;" class="answer point_box">
+                    <div class="box">
+                        <div class="title">
+                        <p>あなたに勧める〇〇は<span class="fs-18"><span class="bg-y">『〇〇』</span></span>です！</p>
+                        </div>
+                    <div class="txt">
+                        <div class="img">
+                        <%= image_tag '' %></div>
+                        <p>説明文「タイトル」</p>
+
+        </article>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(function(){
+   $('a[href^=#]').click(function() {
+      var speed = 600;
+      var href= $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top;
+      $('body,html').animate({scrollTop:position}, speed, 'swing');
+      return false;
+   });
+});
+$(function(){
+    h = $(window).height();
+    h = h-30;
+    $(".question").css("min-height", h + "px");
+    $(".answerList .box").css("min-height", h + "px");
+    
+});
+function show(idName){ 
+    $("#" + idName).show();
+}
+
+</script>
+
+
+</body>
+</html>
+
+
+
