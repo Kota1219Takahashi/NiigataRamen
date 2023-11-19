@@ -1,0 +1,22 @@
+databases:
+  - name: niigataramen_db
+    databaseName: niigataramen_db
+    user: niigataramen
+    region: singapore
+
+services:
+  - type: web
+    name: niigataramen
+    env: ruby
+    region: singapore
+    plan: free
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: niigataramen_db
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
+
